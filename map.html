@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Map</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="levelMap" class="canva level-map-canvas">
+    <div class="status-ui">
+      <div class="hearts">
+        <img src="assets/heart.png" class="heart-icon">
+        <img src="assets/heart.png" class="heart-icon">
+        <img src="assets/heart.png" class="heart-icon">
+      </div>
+      <div class="level-progress">
+        <span id="levelProgressText">0/7</span>
+      </div>
+    </div>
+
+    <div class="map-wrapper">
+      <div class="map_back">
+        <img class="map_part" src="assets/map2/afxazeti.png" style="height: 150px; left: 34px; top: 27px;" data-name="afxazeTi" onclick="startLevel('afxazeTi')">
+        <img class="map_part" src="assets/map2/samegrelo-zemo-svaneti.png" style="left: 172px; top: 77px; height: 145px;" data-name="samegrelo zemo-svaneTi">
+        <img class="map_part2" src="assets/map1/racha-lechxumi.png" style="left: 251px; top: 120px; height: 74px;" data-name="raWa-leCxumi (male daemateba)">
+        <img class="map_part" src="assets/map2/imereti.png" style="left: 229px; top: 172px; height: 85px;" data-name="imereTi">
+        <img class="map_part2" src="assets/map1/guria.png" style="left: 187px; top: 214px; height: 51px;" data-name="guria (male daemateba)">
+        <img class="map_part" src="assets/map2/awara.png" style="left: 166px; top: 244px; height: 64px;" data-name="aWara">
+        <img class="map_part2" src="assets/map1/samcxre-javaxeti.png" style="left: 257px; top: 249px; height: 105px;" data-name="samcxre-javaxeti (male daemateba)">
+        <img class="map_part" src="assets/map2/zemo-qartli.png" style="left: 351px; top: 157px; height: 80px;" data-name="zemo qarTli">
+        <img class="map_part" src="assets/map2/kakheti.png" style="left: 497px; top: 177px; height: 185px;" data-name="kaxeTi">
+        <img class="map_part" src="assets/map2/tbilisi.png" style="left: 467px; top: 255px; height: 45px;" data-name="Tbilisi">
+      </div>
+      <div id="levelNameDisplay" class="level-label"></div>
+    </div>
+  </div>
+
+  <script src="map.js"></script>
+</body>
+</html>

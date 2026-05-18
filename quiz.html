@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+
+
+  <div class="canva quiz-canva">
+    <div class="quiz-ui">
+      <div class="hearts">
+        <img src="assets/heart.png" class="heart-icon">
+        <img src="assets/heart.png" class="heart-icon">
+        <img src="assets/heart.png" class="heart-icon">
+      </div>
+      <div class="quiz-progress">
+        <span id="questionCounter">1/3</span>
+      </div>
+    </div>
+
+    <div class="question-section">
+      <h2 style="background-color: rgb(32, 32, 32); padding: 10px;" id="questionText"></h2>
+      <img id="questionImage" class="question-image" style="display: none;" />
+    </div>
+
+    <div class="answers-grid" id="answersGrid"></div>
+    <div id="justificationBox" class="justification-box" style="display: none;"></div>
+
+    <div id="gameOver" class="gameover-box" style="display: none;">
+      <h1>TamaSi dasrulda</h1>
+      <button onclick="retryLevel()">Tavidan scade</button>
+    </div>
+
+    <div id="levelCompleteBox" class="gameover-box" style="display: none;">
+      <h1 id="levelCompleteText"></h1>
+      <button onclick="nextLevel()">Semdegi turi</button>
+    </div>
+    
+<div id="gameEndScreen" class="game-end-screen" style="display: none;" onclick="goToStartPage()">
+  <h1>gilocav gamarjvebas</h1>
+</div>
+
+  </div>
+  <audio id="backgroundMusic" src="music.mp3" loop></audio>
+
+
+  <script src="quiz.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const bgm = document.getElementById("backgroundMusic");
+  
+      const startMusic = () => {
+        bgm.play().catch(() => {
+        });
+        document.removeEventListener("click", startMusic);
+        document.removeEventListener("keydown", startMusic);
+      };
+  
+      document.addEventListener("click", startMusic);
+      document.addEventListener("keydown", startMusic);
+    });
+  </script>
+</body>
+</html>

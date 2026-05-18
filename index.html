@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReCheck</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="background-color: white;" id="StartMessage" class="canva">
+      <div style="display: block;">
+        <h3 style="color: black;" id="firsttxt1" class="bgtxt">riCeqi</h3>
+        <img style="width: 100%;" src="assets/kingkrulelogos.png" alt="">
+      </div>
+    </div>
+    <div id="menu" class="canva">
+        <div style="display: flex; flex-direction: column; align-items: center; width: max-content; height: max-content;">
+            <button onclick="start()" class="menubtn">dawyeba</button>
+        </div>
+    </div>
+
+    <div id="map" style="display: none;" class="canva">
+        <img src="assets/backgrounds/Tbilisi.png" style="width: 100%; height: auto; object-position: center;" >
+
+        <div style="position: absolute; background: none;" class="canva game-screen">
+            <div class="character left-character">
+                <div>
+                    <img id="animated-image" style="margin-left: 60px;" src="assets/herakle/herakle1.png" alt="Left Character">
+                </div>
+            </div>
+
+            <div class="character right-character">
+                <div alt="Right Character"></div>
+            </div>
+
+            <div class="text-display">
+                <h3 id="fdialogue" class="dialogue-txt"></h3>
+            </div>
+        </div>
+    </div>
+    <div id="levelMap" class="canva level-map-canvas" style="display: none; background-color: rgb(116, 156, 255);">
+      <div class="status-ui">
+        <div class="hearts">
+          <img src="assets/heart.png" class="heart-icon">
+          <img src="assets/heart.png" class="heart-icon">
+          <img src="assets/heart.png" class="heart-icon">
+        </div>
+        <div class="level-progress">
+          <span id="levelProgressText">0/7</span>
+        </div>
+      </div>
+    
+      <div class="map-wrapper">
+        <div class="map_back">
+          <img class="map_part" src="assets/map2/afxazeti.png" style="height: 150px; left: 34px; top: 27px;" data-name="afxazeTi">
+          <img class="map_part" src="assets/map2/samegrelo-zemo-svaneti.png" style="left: 172px; top: 77px; height: 145px;" data-name="samegrelo zemo-svaneTi">
+          <img class="map_part2" src="assets/map1/racha-lechxumi.png" style="left: 251px; top: 120px; height: 74px;" data-name="raWa-leCxumi (male daemateba)">
+          <img class="map_part" src="assets/map2/imereti.png" style="left: 229px; top: 172px; height: 85px;" data-name="imereTi">
+          <img class="map_part2" src="assets/map1/guria.png" style="left: 187px; top: 214px; height: 51px;" data-name="guria (male daemateba)">
+          <img class="map_part" src="assets/map2/awara.png" style="left: 166px; top: 244px; height: 64px;" data-name="aWara">
+          <img class="map_part2" src="assets/map1/samcxre-javaxeti.png" style="left: 257px; top: 249px; height: 105px;" data-name="samcxre-javaxeti (male daemateba)">
+          <img class="map_part" src="assets/map2/zemo-qartli.png" style="left: 351px; top: 157px; height: 80px;" data-name="zemo qarTli">
+          <img class="map_part2" src="assets/map1/qvemo-qartli.png" style="left: 367px; top: 264px; height: 90px;" data-name="qvemo qarTli (male daemateba)">
+          <img class="map_part2" src="assets/map1/shida-qartli.png" style="left: 332px; top: 204px; height: 84px;" data-name="Sida qarTli (male daemateba)">
+          <img class="map_part2" src="assets/map1/mtsxeta-mtianeti.png" style="left: 423px; top: 141px; height: 143px;" data-name="mcxeTa-mTianeTi (male daemateba)">
+          <img class="map_part" src="assets/map2/kakheti.png" style="left: 497px; top: 177px; height: 185px;" data-name="kaxeTi">
+          <img class="map_part" src="assets/map2/tbilisi.png" style="left: 467px; top: 255px; height: 45px;" data-name="Tbilisi">
+        </div>
+        <div id="levelNameDisplay" class="level-label"></div>
+    
+        <button class="start-map-btn" onclick="startGame()">daiwye</button>
+      </div>
+    </div>
+    <audio id="backgroundMusic" src="music.mp3" loop></audio>
+
+    <script src="fun.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const bgm = document.getElementById("backgroundMusic");
+    
+        const startMusic = () => {
+          bgm.play().catch(() => {
+          });
+          document.removeEventListener("click", startMusic);
+          document.removeEventListener("keydown", startMusic);
+        };
+    
+        document.addEventListener("click", startMusic);
+        document.addEventListener("keydown", startMusic);
+      });
+    </script>
+</body>
+</html>
