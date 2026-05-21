@@ -17,6 +17,8 @@
 ---
 
 ## 🇬🇪 The Story
+<img width="1174" height="458" alt="image" src="https://github.com/user-attachments/assets/8dbf5f39-f0aa-4282-9569-de01e6a43ad2" />
+
 
 Misinformation spreads faster than the truth — and RECHECK puts you on the front line.
 
@@ -25,6 +27,8 @@ You join **Herakle**, an ordinary Georgian navigating an extraordinary landscape
 > *"In a world flooded with information, the rarest skill is knowing what to believe."*
 
 RECHECK was born at the **Media Literacy Hackathon at DataFest Tbilisi** — a competition designed to tackle one of the defining challenges of our generation. It didn't just compete. **It won.**
+<img width="676" height="338" alt="image" src="https://github.com/user-attachments/assets/d243266f-0666-4606-b062-e34ded489837" />
+
 
 ---
 
