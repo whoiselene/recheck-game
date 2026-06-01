@@ -22,7 +22,7 @@
 
 Misinformation spreads faster than the truth — and RECHECK puts you on the front line.
 
-You join **Herakle**, an ordinary Georgian navigating an extraordinary landscape of fake news, manipulated narratives, and digital deception. Together, you'll travel across the regions of Georgia, each stop presenting a new challenge, a new lie to unravel, a new truth to uncover.
+You join **Herakle**, an ordinary Georgian navigating an extraordinary landscape of all fake news, manipulated narratives, and digital deception. Together, you'll travel across the regions of Georgia, each stop presenting a new challenge, a new lie to unravel, a new truth to uncover.
 
 > *"In a world flooded with information, the rarest skill is knowing what to believe."*
 
