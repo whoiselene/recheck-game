@@ -17,7 +17,7 @@
 ---
 
 ## 🇬🇪 The Story
-<img width="1174" height="458" alt="image" src="https://github.com/user-attachments/assets/8dbf5f39-f0aa-4282-9569-de01e6a43ad2" />
+<img width="1174" height="459" alt="image" src="https://github.com/user-attachments/assets/8dbf5f39-f0aa-4282-9569-de01e6a43ad2" />
 
 
 Misinformation spreads faster than the truth — and RECHECK puts you on the front line.
