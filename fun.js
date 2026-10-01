@@ -1,6 +1,7 @@
 const firsttxt1 = document.getElementById("firsttxt1");
 const dialogueElement = document.getElementById("fdialogue");
 
+
 function fadeIn(element, txt) {
     return new Promise((resolve) => {
         element.textContent = txt;
