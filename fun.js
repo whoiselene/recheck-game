@@ -9,6 +9,7 @@ function fadeIn(element, txt) {
         element.style.display = "block";
         const interval = setInterval(() => {
             opacity += 0.05;
+            
             element.style.opacity = opacity;
             if (opacity >= 1) {
                 clearInterval(interval);
